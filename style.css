@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main{
+    width: 80%;
+    height: 500px;
+    border: 2px solid blue;
+    margin: 20px auto;
+    display: flex;
+    /* colum => align-items va justify-content teskari ishlaydi */
+    flex-direction: row;
+    
+}
+.main .box{
+    margin: 0;
+    color: gold;
+}
+.second{
+    /* flex: 1; ortib qolgan joyni egallash */
+    flex: 3;
+}
+.third{
+    flex: 1;
+}
+.container{
+    width: 80%;
+    height: auto;
+    border: 2px solid red;
+    margin: 30px auto;
+    display: flex;
+    /* wrap - sig'magan elemetni pasga suradi */
+    flex-wrap: wrap;
+
+    /* align-items: flex-end; */
+    /* justify-content: flex-end; */
+    /* 0 - 1 - 1 - 0 */
+    /* justify-content: space-between; */
+    /* 1 - 1 - 1 - 1 */
+    /* justify-content: space-evenly; */
+    /* 1 - 2 - 2 - 1 */
+    /* justify-content: space-around; */
+}
+.box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid blue;
+    font-size: 32px;
+    margin: 15px;
+    color: red;
+}
+.banner{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(45deg, violet, dodgerblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.banner p{
+    width: 40%;
+    text-align: center;
+    padding: 30px 0px ;
+    line-height: 1.5;
+    user-select: none;
+}
+.banner h1{
+    color: red;
+    user-select: none;
+}
+.banner h1:active{
+    color:  blue;
+}
+.btn{
+    padding:10px 25px ;
+    background-color: #8c041f;
+    color: #fff;
+    border: none;
+}
+.btn:hover{
+    background-color: crimson;
+}
+.btn:active{
+    background-color: gold;
+}
